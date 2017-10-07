@@ -1,0 +1,191 @@
+body {margin: 30px 0px 0px 0px; padding: 0; background-color: black;} /*cor origal é preta */
+
+.logo {
+	width: 200px;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	background-color: #303032;
+	line-height: 2em;
+}
+.corpo-header {
+	width: 80%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.redes-sociais{
+	display: flex;
+	flex-flow: column;
+}
+
+/* ///////////Navegação do topo /////////// */
+
+.nav-topo {
+	display: flex;
+	background-color: #144f95;
+	justify-content: center;
+	padding: 15px 0px;
+}
+.nav-topo ul {
+	display: flex;
+	flex-flow: row;
+	list-style: none;
+	width: 70%;
+	justify-content: space-between;
+	padding: 0px;
+}
+.nav-topo ul li {
+	padding: 10px;
+}
+.nav-topo ul li a {
+	display: flex;
+	text-decoration: none;
+	color: #a8bad0;
+	font-size: 15px;
+	text-transform: uppercase;
+}
+.nav-topo ul li:hover {
+	background-color: #345e90;
+	border-radius: 5px;
+	transition: 100ms;
+}
+
+/* /////// Tamanho do conteúdo geral /////// */
+
+.conteudo-geral {
+	display: flex;
+	margin: 0 auto;
+	width: 90%;
+	/*height: 800px;*/
+}
+
+/* ////////////// navegação na esquerda ///////// */
+
+.nav-esquerda {
+	display: flex;
+	background-color: #081e37;
+	width: 25%;
+	justify-content: center;
+	margin-right: 10px;
+}
+.nav-esquerda ul {
+	padding: 0;
+}
+.nav-esquerda ul li{
+	padding-bottom: 10px;
+}
+.nav-esquerda ul li a {
+	text-decoration: underline;
+	color: #81a9b1;
+}
+
+/* ///////////////// O que fazemos ///////////// */
+
+.conteudo-fazemos {
+	display: flex;
+	flex-flow: column;
+	width: 50%;
+	margin: 0px 10px;
+}
+h1 {
+	font-size: 50px;
+	color: #1676dc;
+	margin: 0px;
+	padding-bottom: 20px;
+}
+.foto-programando {
+	width: 100%;
+	padding: 10px 0px;
+	
+}
+
+/* //////////// Assessoria ////////// */
+
+.assessoria {
+	display: flex;
+	flex-flow: column;
+	width: 25%;
+	margin-left: 10px;
+}
+h2 {
+	font-size: 30px;
+	color: #1676dc;
+	margin: 0;
+	padding-top: 24px;
+	padding-bottom: 20px;
+}
+.mundo-conectado {
+	width: 100%;
+	padding: 10px 0px;
+	
+}
+
+/* //////////// Paragrafos do Conteúdo geral /////////// */
+
+.conteudo-geral p {
+	margin: 0px;
+	color: #656a6e;
+}
+
+
+
+
+
+
+
+
+/* ////////////////////MEDIA QUERY ///////////////////// */
+
+@media screen and (max-width: 480px){
+	
+	
+	.nav-topo ul {
+		flex-flow: column;
+		align-items: center;
+		}
+	.nav-topo ul li {
+		padding: 10px;
+		width: 70%;
+	}
+	.nav-topo ul li a {
+		justify-content: center;
+	}
+	
+/* ///////////////////////////////////////// */
+	.conteudo-geral {
+		flex-flow: column;
+		align-items: center;
+	}
+	
+/*  //////////////////////////////////// */
+	
+	.nav-esquerda {
+		width: 100%;
+		margin: 0px;
+		margin: 20px 0px;
+	}
+	
+/* ///////////////// O que fazemos ///////////// */
+
+	.conteudo-fazemos {
+		width: 100%;
+		margin: 0px 10px;
+	}
+	
+	h1 {
+		text-align: center;
+	}
+	
+/* //////////// Assessoria ////////// */
+
+	.assessoria {
+		width: 100%;
+		margin: 0px;
+	}
+	h2 {
+		text-align: center;
+	}
+}
